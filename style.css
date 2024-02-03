@@ -1,0 +1,279 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+H1{
+    text-align: center;color: aliceblue;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    
+    text-align: center;
+    background-color: rgb(38, 156, 240);
+}
+.menu{
+    text-align: center;
+}
+.menu a:hover{
+    color:rgb(255, 162, 0);
+    font-weight: bold;
+    transition: color 0.7s;
+}
+nav{
+    background-color: #008bdb;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+  }
+.footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(38, 156, 240);
+    font-size: larger;
+}
+.footer.shiroko{
+    background-color: #128df1;
+}
+.footer.nonomi{
+    background-color: #00af2c;
+}
+.footer.serika{
+    background-color: #e13232;
+}
+.footer.hoshino{
+    background-color: #dc9cdc;
+}
+.footer.ayane{
+    background-color: #ffd000;
+}
+.footer.aru{
+    background-color: #ff6f6d;
+}
+.footer.mutsuki{
+    background-color: #ff0000;
+}
+.footer.kayoko{
+    background-color: #000000;
+}
+.footer.haruka{
+    background-color: #47128c;
+}
+
+a:link,a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+a:hover{
+    text-decoration:underline;
+    color: #faf02f;
+}
+.BG1 {
+    width: 100%;
+    min-height: 100vh; 
+    background-image: url(images/Kivotos_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+}
+
+h1,h2{
+    margin: auto;
+    color: black;
+}
+.profile{
+    text-align: center;color: rgb(39, 39, 39);
+    width: 640;height: 400;
+    background-repeat: no-repeat;
+}
+
+  section {
+    color: rgb(38, 38, 38);
+    font-weight: 500;
+    max-width: 90%;
+    margin: auto;
+    background-color: #ffffff91;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: large;
+}
+.ceter100{
+    text-align: center;
+}
+span{
+    margin: 50px;
+}
+.character{
+    font-size: 20px;
+    text-align: center;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff5e;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  td {
+    color: #333;
+  }
+  .centu77{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/skullandperoro.jpg);
+  }
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+  }
+  .card a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.card:hover {
+    filter: brightness(90%);
+    transition: filter 0.3s ease;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  .Blackman a{
+    color: black    ;
+  }
+  @keyframes blink {
+    0% {
+        background-color: rgb(8, 38, 137);
+    }
+    50% {
+        background-color: rgb(19, 72, 207);
+    }
+    100% {
+        background-color: rgb(52, 140, 235);
+    }
+}
+
+.blinking {
+    animation: blink 1s infinite;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-frame-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.image-frame {
+    flex: 1 0 45%; 
+}
+.image-frame:hover::before {
+    opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    
+    .header, .menu, .footer, nav a, section {
+        font-size: 14px;
+    }
+
+    
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
+    video {
+        width: 20%;
+        height: auto;
+    }
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.flipimage {
+    transform: scaleX(-1);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #0000009e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; 
+}
+em{
+    font-size: 30px;
+    color: #0078b9;
+    line-height: 30%;
+}
+.charfont{
+    font-size: 55px;
+    line-height: 120%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
